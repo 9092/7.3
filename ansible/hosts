@@ -1,0 +1,9 @@
+all:
+  hosts:
+  children:
+    webservers:
+      hosts:
+        130.193.51.210:
+          ansible_ssh_user: ubuntu
+          ansible_ssh_private_key_file: ~/.ssh/id_ed25519
+

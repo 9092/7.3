@@ -1,0 +1,8 @@
+ users:
+  - name: user
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICdNr3LLYpyCC2e0BdHWHswXJt9Cqi6X9tkYyYFbxgFc igor@ThinkPad-T480s
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCUrMCJ4+T8zCvVdC3RGzUTFnP862nTguzVT3z/IfRXW62Wxzo9MLWTdaGT6yYEYuilnF4DmYRhw7F4OKi+bUkEQ/mtgseH8/B+WLzi9aRRdDMT7wRzJt2uUVeCFUn9Y9PB+Qe/a9iXZFJuvzF9C84zvC5FVeMnkyLAWXyMUU2otQSBj9KkWZPzjItblHrOLSXp4Ku1f7WENiITvF8p0E6jklZGS4vcDMM4IvW71vyD1z2cHqQWklp4f/lzNLm9rwIHFlhwl5G+Ujnv3FOoAS09+zTyi2tymkVJu7eh769QHjMxsOyOSoWSqFyhgv/PqTvFkfNhmrItqHvrTORDEpEZKxxIHNPicToobHvL3UpePCiDAqt5RW465uYv/Cn73tn8RcSmXGuwnkVzHLGwXbnM1uZJJYa+bxmBUQQ6pdw7/DlSA5DmHBaUo62azeye+ugaieKmb67ey6stTkA8eYy+JrUGkf2+1A0R6QEQwkkadp0uVEG84lAAqrzuoT9s/js= igor@ThinkPad-T480

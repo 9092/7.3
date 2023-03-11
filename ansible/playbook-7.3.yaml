@@ -1,0 +1,24 @@
+---
+- name: Install nginx, make it autostart and check service state
+  hosts: webservers
+  become: yes
+
+  tasks:
+    - name: Install nginx package
+      apt:
+        update_cache: true
+        name: nginx
+        state: latest
+
+    - name: Make nginx start on boot 
+      service:
+        name: nginx
+        state: started
+
+    - name: Collect facts about system services
+      service_facts:
+      register: services_state
+
+    - name: Debug
+      debug:
+        var: ansible_facts.services['nginx.service']
